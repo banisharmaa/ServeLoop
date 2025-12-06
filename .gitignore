@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Database (optional: if you want others to use their own DB)
+serveloop.db
+
+# Backup or temporary folders
+backup/
+*.log

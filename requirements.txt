@@ -1,0 +1,11 @@
+streamlit==1.26.0
+sqlalchemy==2.0.20
+pillow
+qrcode
+requests
+python-multipart
+pydantic
+jinja2
+markdown
+cloudinary
+python-dotenv
