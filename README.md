@@ -1,65 +1,34 @@
 # ServeLoop — Track, Verify, and Celebrate Real-World Social Impact
 
-A lightweight Streamlit MVP for organizing, verifying, and gamifying volunteer impact.
+ServeLoop is a community-driven platform to manage, track, and celebrate volunteer initiatives. Volunteers can discover events, join, submit proof of participation, and earn gamified rewards. Organizers can create events, verify proofs, and manage participants.
 
 ---
 
-## Quick features
+## Features
 
-* Create and discover social impact events (environment, health, education, community).
-* QR-based check-in and proof upload (images/videos).
-* Organizer verification panel to validate contributions.
-* Gamified ServePass with badges and shareable profile.
-* Lightweight local SQLite DB with optional Cloudinary media storage and AI tagging fallbacks.
+Volunteer registration and login
 
----
+Event creation and discovery
 
+Proof submission and verification
 
-## Setup 
+ServePass: track hours and achievements
 
-1. Create and activate a virtual environment:
+Leaderboard and certificates for volunteers
 
-```bash
-python -m venv .venv
-source .venv/bin/activate   # macOS / Linux
-.\.venv\Scripts\activate  # Windows PowerShell
-```
-
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Copy environment variables from `.env.example` into a local `.env` (or set them in your shell). For a quick demo you can skip Cloudinary and AI provider variables — the app has local fallbacks.
-
-4. Initialize the database and seed demo data (optional):
-
-```bash
-python -c "from database.models import init_db, seed_demo_data; init_db(); seed_demo_data()"
-```
-
-5. Run the app:
-
-```bash
-streamlit run app.py
-```
-
-Open `http://localhost:8501` in your browser (or use the Streamlit Cloud link if deployed).
+Downloadable volunteering history (CSV)
 
 ---
 
-## Optional: Cloud media uploads
+## Tech Stack
 
-To upload and serve images/videos from Cloudinary, set the following in your `.env`:
+Frontend & Backend: Streamlit
 
-```
-CLOUDINARY_CLOUD_NAME=your-cloud-name
-CLOUDINARY_API_KEY=your-api-key
-CLOUDINARY_API_SECRET=your-secret
-```
+Database: SQLite
 
-The app uses `utils/cloudinary_utils.py` when these values are present; otherwise it falls back to data-URLs for demo purposes.
+Media Handling: PIL, Base64
+
+Utilities: Custom Python modules in utils
 
 ---
 
