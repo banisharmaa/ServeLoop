@@ -1,6 +1,6 @@
 # ServeLoop — Track, Verify, and Celebrate Real-World Social Impact
 
-A lightweight Streamlit MVP for organizing, verifying, and gamifying volunteer impact. Designed for hackathons: quick to run, demo, and extend.
+A lightweight Streamlit MVP for organizing, verifying, and gamifying volunteer impact.
 
 ---
 
